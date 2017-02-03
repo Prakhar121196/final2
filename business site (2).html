@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Rochester|Indie+Flower" rel="stylesheet">
+<title>Music World!</title>
+<style>
+body{font-family: helvetica, sans-serif;
+background:url("http://cdn.pcwallart.com/images/cool-backgrounds-hd-1080p-wallpaper-2.jpg");
+background-size:100%;
+background-repeat:repeat-y;
+}
+h1{font-family: 'Indie Flower', cursive;
+color:white;
+text-align:center;
+font-size: 75px;
+margin: 60px 0 0 0;
+}
+h2
+{
+text-align:center;
+color:white;
+margin: -10px 0 70px 0;
+font-family: 'Rochester', cursive;
+font-size: 30px;
+}
+
+div{
+max-width:800px;
+height:300px;
+position:relative;
+margin: 20px auto;
+border:5px solid #37474F;
+border-radius: 10px;
+}
+p{font-family:helvetica;
+font-size:25px;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+color:white;
+position:absolute;
+bottom:0;
+margin:0;
+height:30px;
+line-height:25px;
+text-align:justify;
+padding:10px;
+transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+small{opacity:0;}
+.first{
+background:url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/11/3D-Drums-Desktop-Wallpaper.jpg");
+background-size:100% 100%;
+background-position:center;
+}
+.second{
+background:url("blue-guitar-hd-picture-549171.2.jpg");
+background-size:100% 100%;
+background-position:center;
+}
+.third{
+background:url("$_32.jpg");
+background-size:100% 100%;
+background-position:center;
+}
+.forth{
+background-image: url("https://images.alphacoders.com/950/95011.jpg");
+background-size:100% 100%;
+background-position:center;
+}
+.price{
+float:right;
+}
+.show-description p{
+  height: 200px;
+}
+.show-description small{
+  opacity: 1;
+  }
+@media(max-width:600px)
+{h1{font-size:50px;
+    line-height:50px;
+     margin:10px;}
+ h2{font-size:20px;
+    line-height:10px;
+     margin-bottom:30px;}
+ p{font-size:18px;
+    line-height:20px;
+	height: 40px;
+	}
+div{height:250px;}    
+}
+</style>
+</head>
+<body>
+<header>
+<h1>MUSIC WORLD</h1>
+<h2>music is life</h2> 
+</header>
+<div class="first">
+<p>MAPEX DRUM KIT <span class="price">Rs.38,900</span></br></br>
+<small>Drum-kit-Voyager Series,5 piece,Standard colors available:Black
+and white,Navy blue and white.Alesis DM Lite Kit with light-up LED
+pads.</small></p></div>
+<div class="second">
+<p>Strarocaster Electric Guitar<span class="price">$200</span></br></br>
+<small>A great playing and sounding strat with everything you need to start today.
+3-single cil pickups,5-way pickup switching,solid hardwood body</small></p></div>
+<div class="third">
+<p>Tabla<span class="price">Rs.13449</span></br></br>
+<small>SanskritiMusicals Heavy Copper Tabla set.Five and half kg.-AAD model-Latest Edition.
+Concert quality Tabla set,professionally tested before shipping.
+Sheesham wood and Dayan tuned to C#.</small></p></div>
+<div class="forth">
+<p>Violin<span class="price">Rs.20000</span></br></br>
+<small>Rhh 4/4 Acoustic Violin Case Bow Rosin For Violin Beginner Black.
+All they are 4/4 full size,The top is made from Composite Wood,The head,back and sides of violin are made from Composite Wood.
+</small></p></div>
+
+<script>
+$('div').hover(function(){
+		$(this).addClass('show-description');
+		}, function(){
+		$(this).removeClass('show-description');
+		});
+  </script>
+</body>
+</html>
